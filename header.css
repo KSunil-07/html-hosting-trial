@@ -1,0 +1,76 @@
+.header{
+position: fixed; 
+top:0;right:0;left:0;height:60px;
+background-color:white;
+display: flex;
+justify-content: space-between; align-items: center;
+z-index: 45;
+
+}
+
+.left-section{
+width:140px;
+display: flex;
+justify-content: space-between;
+padding-left: 20px;
+padding-right: 0px;
+align-items: center;
+
+
+}
+
+.middle-section{
+flex:1;
+margin-left: 22px;
+margin-right: 22px;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 18px;
+padding-right: 18px;
+flex-shrink: 0;
+
+}
+
+.right-section{
+width:190px;
+display: flex;
+padding-right: 12px;
+padding-left: 8px;
+align-items: center;
+justify-content: space-between;
+}
+
+.header-icon-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.tooltip{
+  position: absolute;
+  bottom:-32px;
+  white-space: nowrap;
+  background-color: rgb(78, 78, 78);
+  color:white;
+  opacity:0;
+  padding-left:8px;padding-right: 8px;
+  padding-top: 4px; padding-bottom: 4px;
+  transition: opacity 0.20s;
+  pointer-events:none;
+}
+
+.header-icon-container:hover .tooltip{
+opacity:1
+}
+
+.notifications-number{
+top:-4px;right:20px;
+position: absolute;
+color: white; background-color: rgb(229, 40, 40);
+padding-left: 4px; padding-right:4px;border-radius: 17px;
+font-size: 12px;
+}
